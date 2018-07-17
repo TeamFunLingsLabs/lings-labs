@@ -26866,7 +26866,7 @@ exports.default = CVContainer;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
@@ -26875,15 +26875,41 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//Sheila was here
+
+
 function ContactContainer() {
-  return _react2.default.createElement(
-    "div",
-    null,
-    "Contact"
-  );
+
+    // Can't we just embed google calendar and allow visitors/potential candidates to book their own slots?
+    return _react2.default.createElement(
+        "div",
+        null,
+        "Contact and Calendar",
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("iframe", { className: "", src: "https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23FFFFFF&src=lingslabs%40gmail.com&color=%231B887A&ctz=Europe%2FLondon", style: { borderWidth: 0, width: 800, height: 600, frameBorder: 0, scrolling: "no" } }),
+        _react2.default.createElement("br", null),
+        "Lets site visitor save an event to their own calendar - maybe for an open day or drinks",
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+            "a",
+            { target: "_blank", href: "https://calendar.google.com/event?action=TEMPLATE&tmeid=N2c4dDIxcW9lbzI5b2FsMWExMDhybGxlajggbGluZ3NsYWJzQG0&tmsrc=lingslabs%40gmail.com" },
+            _react2.default.createElement("img", { border: "0", src: "https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif" })
+        ),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+            "a",
+            { target: "_blank", href: "https://calendar.google.com/event?action=TEMPLATE&tmeid=NTFtbm5ucjEyaHE2dWpxMDd2b2w5ZzJkbDBfMjAxODA3MThUMTAzMDAwWiBsaW5nc2xhYnNAbQ&tmsrc=lingslabs%40gmail.com&scp=ALL" },
+            _react2.default.createElement("img", { border: "0", src: "https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif" })
+        ),
+        _react2.default.createElement("br", null)
+    );
 }
 
 exports.default = ContactContainer;
+
+//  {/* <iframe src='https://calendar.google.com/calendar/embed?/ height=1600&amp;wkst=2&amp;bgcolor=%2333ffff&amp;src=lingslabs%40gmail.com&amp;color=%231B887A&amp;ctz=Europe%2FLondon style=border-width:1 width=1800 height=1600 frameBorder=1 scrolling=yes'> </iframe> */}
 
 /***/ }),
 
