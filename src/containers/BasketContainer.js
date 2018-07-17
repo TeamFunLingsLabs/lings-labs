@@ -3,7 +3,8 @@ import Basket from "../components/Basket";
 
 const mapStateToProps = reduxState => {
   return {
-    merch: reduxState.merch
+    merch: reduxState.merch,
+    currentOrder: reduxState.currentOrder
   };
 };
 

@@ -19,16 +19,16 @@ export function fetchMerchFromStorage() {
   };
 }
 
-export function addToOrder(orderId) {
+export function addToOrder(item) {
   return {
     type: "ADD_TO_ORDER",
-    orderId
+    item
   };
 }
 
-export function removeFromOrder(orderId) {
+export function removeFromOrder(item) {
   return {
     type: "REMOVE_FROM_ORDER",
-    orderId
+    item
   };
 }

@@ -10,7 +10,7 @@ function Merch({ item, incrementClick, decrementClick }) {
       <p>{item.desc}</p>
       <p>£{itemPrice}</p>
       <MerchButton
-        orderId={item.id}
+        item={item}
         incrementClick={incrementClick}
         decrementClick={decrementClick}
       />

@@ -1,10 +1,10 @@
 import React from "react";
 
-function MerchButton({ orderId, incrementClick, decrementClick }) {
+function MerchButton({ item, incrementClick, decrementClick }) {
   return (
     <div>
-      <button onClick={() => incrementClick(orderId)}>+</button>
-      <button onClick={() => decrementClick(orderId)}>-</button>
+      <button onClick={() => incrementClick(item)}>+</button>
+      <button onClick={() => decrementClick(item)}>-</button>
     </div>
   );
 }
