@@ -4,6 +4,7 @@ const app = express();
 app.use("/static", express.static("static"));
 app.set("view engine", "hbs");
 
+
 const storage = {
   merch: {
     1: {
@@ -74,12 +75,12 @@ function getOrders(storage) {
   return storage.orders;
 }
 
-app.get("/api/merch", function(req, res) {
+app.get("/api/merch", function (req, res) {
   const merch = getMerch(storage);
   res.json(merch);
 });
 
-app.post("/api/order", function(req, res) {
+app.post("/api/order", function (req, res) {
   const orderId = `order-${storage.id++}`;
   const tempOrder = req.body;
   tempOrder.id = orderId;
@@ -88,22 +89,22 @@ app.post("/api/order", function(req, res) {
   res.status(201).json(tempOrder);
 });
 
-app.get("/api/order", function(req, res) {
+app.get("/api/order", function (req, res) {
   const orders = getOrders(storage);
   res.json(orders);
 });
 
-app.delete("/api/order/:key", function(req, res) {
+app.delete("/api/order/:key", function (req, res) {
   orderhistory = storage.orders;
   delete orderhistory[req.params.key];
   res.status(201).json(orderhistory);
 });
 
-app.get("*", function(req, res) {
+app.get("*", function (req, res) {
   res.render("index");
 });
 
-const port = process.env.PORT || 8080;
-app.listen(port, function() {
+const port = process.env.PORT || 8081;
+app.listen(port, function () {
   console.log(`Listening on port number ${port}`);
 });
