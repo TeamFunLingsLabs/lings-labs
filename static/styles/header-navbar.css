@@ -1,0 +1,82 @@
+.header {
+  margin: 0;
+  padding: 45px;
+
+  width: 100%;
+
+  text-align: center;
+
+  background-color: #ffee00;
+  color: #38625c;
+
+  border-bottom-style: solid;
+  border-bottom-color: #38625c;
+}
+
+.dmitri {
+  margin-top: -15px;
+  margin-bottom: 10px;
+  display: block;
+  float: left;
+
+  width: 7em;
+  height: auto;
+}
+
+.beards {
+  display: flex;
+
+  width: 13em;
+  height: auto;
+}
+
+.beards__brown {
+  margin-top: -60px;
+  margin-bottom: 5px;
+
+  width: 8em;
+  height: 7em;
+}
+
+.beards__ginger {
+  margin-top: -60px;
+  margin-bottom: 5px;
+
+  width: 8em;
+  height: 7em;
+}
+
+.beards__black {
+  margin-top: -60px;
+  margin-bottom: 5px;
+
+  width: 8em;
+  height: 7em;
+}
+
+.beards__dark {
+  margin-top: -60px;
+  margin-bottom: 5px;
+
+  width: 8em;
+  height: 7em;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+  width: 10em;
+
+  background-color: #ffee00;
+
+  border-right-color: #38625c;
+  border-right-style: solid;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
