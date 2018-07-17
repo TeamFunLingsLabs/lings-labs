@@ -1,0 +1,19 @@
+.calendar__content{
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+
+.calendar__frame{
+  /* justify-content: center;
+  align-content: center;
+  text-align: center; */
+  margin-left:150px;
+
+}
+
+.calendar__button{
+margin:20px;
+
+}
