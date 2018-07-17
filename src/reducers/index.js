@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
-import placeholder from "./placeholder";
+import merchReducer from "./merchReducer";
+import orderReducer from "./orderReducer";
 
 export default combineReducers({
-  placeholder
+  merch: merchReducer,
+  currentOrder: orderReducer
 });
