@@ -1,25 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function SideBar() {
+function NavBar() {
   return (
-    <div>
-      <ul>
+    <div className="navbar">
+      <ul className="navbar__links">
         <li>
           <Link to="/">Home</Link>
         </li>
+        <p />
         <li>
           <Link to="/courseapply">Course/Apply</Link>
         </li>
+        <p />
+
         <li>
           <Link to="/syllabus">Syllabus</Link>
         </li>
+        <p />
+
         <li>
           <Link to="/cv">CV</Link>
         </li>
+        <p />
+
         <li>
           <Link to="/contact">Find Us</Link>
         </li>
+        <p />
+
         <li>
           <Link to="/merch">Merch</Link>
         </li>
@@ -28,4 +37,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default NavBar;

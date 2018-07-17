@@ -15,6 +15,7 @@
     "hbs": "^4.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-draggable": "^3.0.5",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.0",
