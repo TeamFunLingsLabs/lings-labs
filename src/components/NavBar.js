@@ -20,7 +20,7 @@ function NavBar() {
         <p />
 
         <li>
-          <Link to="/cv">CV</Link>
+          <Link to="/cv">Staff</Link>
         </li>
         <p />
 
