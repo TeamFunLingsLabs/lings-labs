@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TopicList from "./TopicList";
 
 function NavBar() {
   return (
@@ -20,7 +21,7 @@ function NavBar() {
         <p />
 
         <li>
-          <Link to="/cv">CV</Link>
+          <Link to="/cv">Staff</Link>
         </li>
         <p />
 
@@ -33,6 +34,7 @@ function NavBar() {
           <Link to="/merch">Merch</Link>
         </li>
       </ul>
+      <TopicList />
     </div>
   );
 }
