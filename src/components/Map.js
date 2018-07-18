@@ -13,9 +13,9 @@ class Map extends React.Component {
     ));
     return (
       <div className="Map">
-        <h4>Map Template</h4>
+        <h4>Come and Find Us!</h4>
         <ConstructorLabsHQ
-          containerElement={<div style={{ height: `200px`, width: "200px" }} />}
+          containerElement={<div style={{ height: `500px`, width: "500px" }} />}
           mapElement={<div style={{ height: `100%` }} />}
         />
       </div>
