@@ -3,7 +3,12 @@ import Map from "./Map";
 
 class Footer extends React.Component {
   render() {
-    return <Map />;
+    return (
+      <div>
+        <Map />
+        <p>2 Baker's Yard, London EC1R 3DD</p>
+      </div>
+    );
   }
 }
 
