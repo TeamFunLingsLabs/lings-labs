@@ -12,6 +12,9 @@ function Header() {
         <Draggable>
           <img className="beards__brown" src="./static/images/beard1.png" />
         </Draggable>
+        <Draggable>
+          <img className="beards__ginger" src="./static/images/beard5.png" />
+        </Draggable>
       </div>
       <h1 className="header__title">Lings Labs</h1>
       <p>“Holy shit, I’ve actually built a school”</p>
