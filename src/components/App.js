@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Main from "./Main";
+import Footer from "./Footer";
 
 class App extends React.Component {
   render() {
@@ -12,7 +13,8 @@ class App extends React.Component {
           <NavBar />
           <Main />
         </div>
-        <footer className="app__footer" />
+        {/* <footer className="app__footer" /> */}
+        <Footer />
       </div>
     );
   }
