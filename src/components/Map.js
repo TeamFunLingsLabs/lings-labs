@@ -1,5 +1,5 @@
 import React from "react";
-import { withGoogleMap, GoogleMap } from "react-google-maps";
+import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 class Map extends React.Component {
   render() {
@@ -7,7 +7,9 @@ class Map extends React.Component {
       <GoogleMap
         defaultCenter={{ lat: 51.523573, lng: -0.110203 }}
         defaultZoom={15}
-      />
+      >
+        <Marker position={{ lat: 51.523573, lng: -0.110203 }} />
+      </GoogleMap>
     ));
     return (
       <div className="Map">
