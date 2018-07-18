@@ -1,9 +1,8 @@
 import React from "react";
 
-
 function Contact() {
 
-  // Can't we just embed google calendar and allow visitors/potential candidates to book their own slots?
+
   return <div className="calendar">
 
     <h2>Contact and Calendar</h2>
@@ -14,13 +13,6 @@ function Contact() {
         style={{ borderWidth: 0, width: 800, height: 600, frameBorder: 0, scrolling: "no" }}>
       </iframe>
 
-      {/* <a target="_blank"
-        href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MjYzNGw0ZXZncnQzMTAwMGxvZ29oc250MTUgbGluZ3NsYWJzQG0&amp;tmsrc=lingslabs%40gmail.com">
-
-        <button className="calendar__button">
-          Interview Slot A
-          </button>
-      </a> */}
 
     </div>
 
