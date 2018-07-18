@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import placeholder from "./placeholder";
+import setApplication from "./setApplication";
 
 export default combineReducers({
-  placeholder
+  application: setApplication
 });
