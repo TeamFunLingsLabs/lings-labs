@@ -1,7 +1,17 @@
-import React from "react";
+import { connect } from "react-redux";
+import Contact from "../components/Contact"
+import { fetchCalendar } from "../actions";
 
-function ContactContainer() {
-  return <div>Contact</div>;
+
+
+const mapDispatchToProps = dispatch => {
+
+  return {
+    fetchCalendar: () => dispatch(fetchCalendar())
+  }
 }
 
-export default ContactContainer;
+
+export default connect(null, mapDispatchToProps)(Contact);
+
+
