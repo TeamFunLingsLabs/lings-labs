@@ -32,6 +32,12 @@ function NavBar() {
         <li>
           <Link to="/merch">Merch</Link>
         </li>
+        <p />
+        <p />
+        <p />
+        <li>
+          <Link to="/admin">Admin</Link>
+        </li>
       </ul>
     </div>
   );

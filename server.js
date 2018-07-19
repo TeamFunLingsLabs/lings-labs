@@ -29,6 +29,11 @@ app.post("/api/applications", function(req, res) {
   res.json(application);
 });
 
+app.get("/api/applications", function(req, res) {
+  const applicants = newApplication();
+  res.json(applicants);
+});
+
 const storage = {
   merch: {
     1: {
@@ -128,7 +133,7 @@ app.get("*", function(req, res) {
   res.render("index");
 });
 
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log(`Listening on port number ${port}`);
 });

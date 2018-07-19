@@ -6,6 +6,7 @@ import CVContainer from "../containers/CVContainer";
 import HomePageContainer from "../containers/HomePageContainer";
 import ShopContainer from "../containers/ShopContainer";
 import SyllabusContainer from "../containers/SyllabusContainer";
+import AdminContainer from "../containers/AdminContainer";
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
       <Route path="/cv" render={() => <CVContainer />} />
       <Route path="/contact" render={() => <ContactContainer />} />
       <Route path="/merch" render={() => <ShopContainer />} />
+      <Route path="/merch" render={() => <AdminContainer />} />
     </Switch>
   );
 }

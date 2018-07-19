@@ -2,6 +2,8 @@ import React from "react";
 import CourseBrief from "./CourseBrief";
 import WhyUs from "./WhyUs";
 import TeachingStyle from "./TeachingStyle";
+import Zoom from "react-reveal/Zoom";
+
 import Apply from "./Apply";
 
 function CourseWrapper({
@@ -14,17 +16,19 @@ function CourseWrapper({
 }) {
   return (
     <div>
-      <CourseBrief />
-      <WhyUs />
-      <TeachingStyle />
-      <Apply
-        application={application}
-        changeFirstName={changeFirstName}
-        changeLastName={changeLastName}
-        changeReason={changeReason}
-        changeEmail={changeEmail}
-        postApply={postApply}
-      />
+      <Zoom>
+        <CourseBrief />
+        <WhyUs />
+        <TeachingStyle />
+        <Apply
+          application={application}
+          changeFirstName={changeFirstName}
+          changeLastName={changeLastName}
+          changeReason={changeReason}
+          changeEmail={changeEmail}
+          postApply={postApply}
+        />
+      </Zoom>
     </div>
   );
 }
