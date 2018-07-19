@@ -25,6 +25,7 @@
 
 .beards {
   display: flex;
+  flex-direction: column;
 
   width: 13em;
   height: auto;
@@ -32,6 +33,7 @@
 
 .beards__brown {
   margin: 0;
+  position: absolute;
 
   width: 8em;
   height: 7em;
@@ -39,30 +41,48 @@
 
 .beards__ginger {
   margin: 0;
+  position: relative;
 
   width: 8em;
   height: 7em;
 }
 
-.beards__black {
+.beards__white {
   margin: 0;
+  position: absolute;
 
   width: 8em;
   height: 7em;
 }
 
-.beards__dark {
+.russian-hat {
   margin-top: -60px;
   margin-bottom: 5px;
 
-  width: 8em;
-  height: 7em;
+  width: 13em;
+  height: 15em;
+}
+
+.logo {
+  width: 10em;
+  height: 10em;
 }
 
 .title-container {
   display: flex;
   flex-direction: column;
+
   align-items: center;
+
+  color: red;
+
+  animation: color-blink 0.3s steps(2, start) infinite;
+}
+
+@keyframes color-blink {
+  to {
+    color: #38625c;
+  }
 }
 
 .navbar {
@@ -93,7 +113,7 @@
 .homepage__routes {
   position: fixed;
 
-  bottom: 0;
+  top: 38%;
   width: auto;
 
   padding: 20px;

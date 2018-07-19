@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+
+  justify-content: space-around;
+
+  border-style: solid;
+  border-top-color: #38625c;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  background-color: #ffee00;
+
+  color: #38625c;
+}
+
+.footer__map {
+  width: 10px;
+  height: auto;
+}

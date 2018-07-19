@@ -9,7 +9,7 @@ function Header() {
         <img className="dmitri" src="./static/images/dmitri-face.png" />
       </Draggable>
       <div className="title-container">
-        <h1 className="header__title">Lings Labs</h1>
+        <h1 className="header__title">DimsLabs.com</h1>
         <p>“Holy shit, I’ve actually built a school”</p>
       </div>
       <div className="beards">
@@ -18,6 +18,9 @@ function Header() {
         </Draggable>
         <Draggable>
           <img className="beards__ginger" src="./static/images/beard5.png" />
+        </Draggable>
+        <Draggable>
+          <img className="beards__white" src="./static/images/santa.png" />
         </Draggable>
       </div>
     </header>
