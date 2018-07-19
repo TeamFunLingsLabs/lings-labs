@@ -17,7 +17,7 @@ function Main() {
       <Route path="/syllabus" render={() => <SyllabusContainer />} />
       <Route path="/cv" render={() => <CVContainer />} />
 
-      <Route path="/merch" render={() => <AdminContainer />} />
+      <Route path="/admin" render={() => <AdminContainer />} />
       <Route path="/contact" render={() => <Contact />} />
       <Route path="/merch" render={() => <MerchContainer />} />
     </Switch>
@@ -25,3 +25,4 @@ function Main() {
 }
 
 export default Main;
+<br />;

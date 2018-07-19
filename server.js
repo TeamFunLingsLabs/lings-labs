@@ -41,14 +41,16 @@ const storage = {
       name: "Rubber Duck",
       price: 2.71,
       img: "/static/images/duck.jpg",
-      desc: "This sagely rubber duck will provide all the answers to your coding problems"
+      desc:
+        "This sagely rubber duck will provide all the answers to your coding problems"
     },
     2: {
       id: 2,
       name: "Luxury Egg Timer",
       price: 8.6,
       img: "/static/images/egg.jpg",
-      desc: "This is an egg timer"
+      desc:
+        "Never get stuck at your computer for longer than it takes to hard boil an egg"
     },
     3: {
       id: 3,
