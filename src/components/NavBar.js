@@ -35,7 +35,7 @@ function NavBar() {
         <p />
 
         <li>
-          <Link to="/contact">Find Us</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
         <p />
 

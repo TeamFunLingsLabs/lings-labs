@@ -10,13 +10,14 @@
 }
 
 .cv__section__title {
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 }
 
 .cv__icon {
   margin: auto;
   width: 30px;
+  margin: 15px;
 }
 
 .cv__profiles {

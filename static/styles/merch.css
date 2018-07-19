@@ -1,91 +1,90 @@
-.merch{
-  display:flex;
+.merch {
+  display: flex;
   flex-direction: row;
-  flex:12;
+  flex: 12;
 
   text-align: left;
+  font-family: "Montserrat", sans-serif;
 }
 
-.merch__content{
+.merch__content {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-  flex:10;
-   
+  flex: 10;
 }
 
-.content__card{
+.content__card {
   min-width: 200px;
   text-align: center;
   background-color: rgba(81, 156, 156, 0.5);
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:20px;
-  margin-bottom:10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
   width: 250px;
-  height:300px;
+  height: 400px;
 }
 
-.card__h1{
-  margin-top:10px;
-  font-size:20px;
-  color:blue;
+.card__h1 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: blue;
 }
 
 .card__image {
-  height:150px;
-  width:150px;
-  border-radius:50%;
-  margin-top:10px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
 }
 
-.merch__basket{
-  flex:2; 
+.merch__basket {
+  flex: 2;
   background-color: beige;
 
-  text-align:right;
-  margin-right:10px;
-  margin-top:10px;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 10px;
 }
-.card__button{
-margin-left:10px;
-/* margin-right:10px; */
-border-radius:50%;
-background-color: greenyellow;
-
-}
-
-.basket{
-  display:flex;
-  flex-direction:column;
+.card__button {
+  margin-left: 10px;
+  /* margin-right:10px; */
+  border-radius: 50%;
+  background-color: greenyellow;
 }
 
-.basket__title{
-  font-size:30px;
-  margin-top:20px;
-  border-bottom:2px solid blue;
+.basket {
+  display: flex;
+  flex-direction: column;
 }
 
-.basket__h1{
-  font-size:30px;
-  margin-top:20px;
-  border-top:2px solid blue;
-  border-bottom:2px solid blue;
-}
-.basket__h2{
-  font-size:20px;
+.basket__title {
+  font-size: 30px;
+  margin-top: 20px;
+  border-bottom: 2px solid blue;
 }
 
-.basket__line{
-  font-size:20px;
-  margin-left:0x;
+.basket__h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+.basket__h2 {
+  font-size: 20px;
 }
 
-.basket__button{
-  height:60px;
-  font-size:15px;
+.basket__line {
+  font-size: 20px;
+  margin-left: 0x;
+}
+
+.basket__button {
+  height: 60px;
+  font-size: 15px;
 }
 
 .popup {
@@ -100,24 +99,23 @@ background-color: greenyellow;
   /* background-color: rgba(0,0,0, 0.5); */
 }
 .popup_inner {
-  
   position: absolute;
-  left:-5%;
+  left: -5%;
   right: -5%;
   top: -3%;
   bottom: -3%;
   border-radius: 2%;
-  padding-top:20px;
+  padding-top: 20px;
 
   background: violet;
   text-align: center;
 }
 
 .popup__image {
-  height:300px;
-  width:300px;
+  height: 300px;
+  width: 300px;
   /* border-radius:50%; */
-  margin-top:20px;
+  margin-top: 20px;
 }
 /* 
 #grow img{
@@ -134,17 +132,17 @@ background-color: greenyellow;
 /*MORPH*/
 #morph {
   -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
- 
+
 #morph:hover {
   border-radius: 50%;
   -webkit-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-       -o-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
