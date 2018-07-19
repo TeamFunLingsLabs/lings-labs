@@ -3,9 +3,11 @@ import Admin from "../components/Admin";
 import { fetchApplicants } from "../actions";
 
 const mapStateToProps = reduxState => {
+
   return {
     applicants: reduxState.applicants
   };
+
 };
 
 const mapDispatchToProps = dispatch => {
