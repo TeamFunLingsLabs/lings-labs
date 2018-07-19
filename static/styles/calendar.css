@@ -1,19 +1,53 @@
-.calendar__content{
-  display:flex;
-  flex-direction: row;
+.calendar {
+  width: 100%;
+  background-image: url("/static/images/chicksbg.jpg");
+  background-size: cover;
+  color: #38625c;
+}
+
+.calendar__contact {
   text-align: center;
 }
 
-
-.calendar__frame{
-  /* justify-content: center;
-  align-content: center;
-  text-align: center; */
-  margin-left:150px;
-
+.calendar__title {
+  padding: 40px;
 }
 
-.calendar__button{
-margin:20px;
+.calendar__text {
+  width: 350px;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
 
+.calendar__icon {
+  margin: auto;
+  width: 30px;
+  margin: 20px;
+}
+
+.calendar__content {
+  text-align: center;
+  padding: 50px;
+}
+
+.calendar__button {
+  margin: 20px;
+}
+
+#morph {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }

@@ -90,6 +90,14 @@
   width: 100%;
 }
 
+.homepage__quotes {
+  text-align: center;
+}
+
+.quote {
+  padding: 8px;
+}
+
 .homepage__routes {
   position: fixed;
 
