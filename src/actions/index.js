@@ -76,3 +76,24 @@ export function removeFromOrder(item) {
     item
   };
 }
+
+export function fetchApplicants() {
+  return function(dispatch) {
+    fetch("/api/applications")
+      .then(response => response.json())
+      .then(applicants => {
+        console.log(applicants);
+        dispatch(receiveApplicants(applicants));
+      })
+      .catch(function(error) {
+        console.log("something went wrong");
+      });
+  };
+}
+
+export function receiveApplicants(applicants) {
+  return {
+    type: "FETCH_APPLICATIONS",
+    applicants
+  };
+}
