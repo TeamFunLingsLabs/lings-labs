@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 function Syllabus() {
   return (
     <div className="content-body syllabus--container">
-      <h2 className="syllabus--title animated 1 shake">
-        What we will learn you!
-      </h2>
+      <h2 className="syllabus--title animated 1 shake">What you will learn!</h2>
       <p className="syllabus--body-text">
         Our course is designed around developing practical skills that will not
         only provide you with a solid understanding of fundamentals and the
@@ -30,6 +28,77 @@ function Syllabus() {
         update the material to focus more on skills that we and our talent
         partners believe would provide a fuller and more rounded skill set.
       </p>
+      <Link to="/courseapply">
+        <button className="application-button button animated infinite pulse">
+          Apply Now
+        </button>
+      </Link>
+      <div>
+        <h3>Week 1</h3>{" "}
+        <p className="syllabus--body-text">
+          Command line tools, Git, Github, Developer tools Functions, operators
+          and types Array methods How the web works. Responsive design and
+          accessibility Weekend project: personal website{" "}
+        </p>{" "}
+        <h3>Week 2</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          Scope Object traversal DOM manipulation and Events Asynchronous
+          programming. Promises and ajax calls Weekend project: Project cinema{" "}
+        </p>{" "}
+        <h3>Week 3</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          Modules and Unit Testing using Jest Prototypes, Constructors and OOP.
+          Understanding context Pure functions and Closures Software development
+          principles Weekend project: Pick your own{" "}
+        </p>{" "}
+        <h3>Week 4</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          React intro Testing React with Enzyme Stateless components and ESLint
+          Sass Weekend project: React cinema{" "}
+        </p>{" "}
+        <h3>Week 5</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          Node, Express and templating with Handlebars Understanding HTTP.
+          RESTful API design. Express routing Deployment to Heroku Testing Node
+          applications Weekend project: Quiz machine{" "}
+        </p>
+        <h3>Week 6</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          SQL and Databases with PostgreSQL Database structure. Joins. Using
+          indexes Node and Postgres. Preventing SQL injection Transactions
+          Weekend project: DeliverEAT{" "}
+        </p>{" "}
+        <h3>Week 7</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          Middleware and Passport Authentication Understanding browser
+          performance and optimisation Weekend project: Resource library
+          back-end{" "}
+        </p>
+        <h3>Week 8</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          Working with Git branches, merging and pull requests Small group
+          project Weekend project: Resource library front-end{" "}
+        </p>{" "}
+        <h3>Week 9</h3>{" "}
+        <p className="syllabus--body-text">
+          Core Redux Using react-redux Weekend project: Expense tracker{" "}
+        </p>{" "}
+        <h3>Week 10-11</h3>{" "}
+        <p className="syllabus--body-text">Main group project </p>{" "}
+        <h3>Week 12</h3>{" "}
+        <p className="syllabus--body-text">
+          {" "}
+          Careers, portfolio, CV writing and interview prep Demo day preparation
+          Demo day
+        </p>
+      </div>
       <Link to="/courseapply">
         <button className="application-button button animated infinite pulse">
           Apply Now
