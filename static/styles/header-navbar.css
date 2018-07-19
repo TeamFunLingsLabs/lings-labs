@@ -69,7 +69,7 @@
   display: flex;
   flex-direction: column;
 
-  width: auto;
+  width: 250px;
 
   background-color: #ffee00;
 
@@ -120,10 +120,18 @@
   border-width: 5px;
   border-style: ridge;
 
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: bold;
   color: #38625c;
 
   height: 5em;
   width: 5em;
+}
+
+.topic-list--title {
+  font-family: "Press Start 2P", cursive;
+}
+
+.topic-list--list-item {
+  font-family: Montserrat, sans-serif;
 }

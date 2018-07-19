@@ -54,7 +54,7 @@ export function fetchMerchFromStorage() {
     fetch("/api/merch")
       .then(response => response.json())
       .then(merch => {
-        console.log("merch:", merch);
+
         dispatch(receiveMerch(merch));
       })
       .catch(function (error) {
@@ -78,14 +78,15 @@ export function removeFromOrder(item) {
 }
 
 export function fetchApplicants() {
-  return function(dispatch) {
+  return function (dispatch) {
     fetch("/api/applications")
       .then(response => response.json())
       .then(applicants => {
-        console.log(applicants);
+
         dispatch(receiveApplicants(applicants));
+
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log("something went wrong");
       });
   };
