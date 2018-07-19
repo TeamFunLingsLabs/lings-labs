@@ -40,56 +40,56 @@ const storage = {
       id: 1,
       name: "Rubber Duck",
       price: 2.71,
-      img: "",
-      desc: "This is a rubber duck"
+      img: "/static/images/duck.jpg",
+      desc: "This sagely rubber duck will provide all the answers to your coding problems"
     },
     2: {
       id: 2,
-      name: "Egg Timer",
+      name: "Luxury Egg Timer",
       price: 8.6,
-      img: "",
+      img: "/static/images/egg.jpg",
       desc: "This is an egg timer"
     },
     3: {
       id: 3,
       name: "Note Book",
       price: 11.83,
-      img: "",
+      img: "/static/images/notebook.jpg",
       desc: "This is a note book"
     },
     4: {
       id: 4,
       name: "Desk Fan",
       price: 15.0,
-      img: "",
+      img: "/static/images/fan2.jpg",
       desc: "This is a desk fan"
     },
     5: {
       id: 5,
       name: "Signed Hoodie",
       price: 300.0,
-      img: "",
+      img: "/static/images/hoodie.jpg",
       desc: "This is a signed hoodie"
     },
     6: {
       id: 6,
       name: "Laptop Sticker",
       price: 2.15,
-      img: "",
+      img: "/static/images/sticker2.jpg",
       desc: "This is a laptop sticker"
     },
     7: {
       id: 7,
       name: "Beard Comb",
       price: 12.5,
-      img: "",
+      img: "/static/images/comb.jpg",
       desc: "This is a beard comb"
     },
     8: {
       id: 8,
       name: "Novelty Dmitri Disguise",
       price: 9.75,
-      img: "",
+      img: "/static/images/disguise.jpg",
       desc: "This is a novelty Dmitri disguise"
     }
   },

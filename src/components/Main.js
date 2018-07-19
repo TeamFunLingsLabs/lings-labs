@@ -1,12 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import ContactContainer from "../containers/ContactContainer";
-import CourseApplyContainer from "../containers/CourseApplyContainer";
-import CVContainer from "../containers/CVContainer";
+
 import HomePageContainer from "../containers/HomePageContainer";
-import ShopContainer from "../containers/ShopContainer";
+import CourseApplyContainer from "../containers/CourseApplyContainer";
 import SyllabusContainer from "../containers/SyllabusContainer";
 import AdminContainer from "../containers/AdminContainer";
+import CVContainer from "../containers/CVContainer";
+import Contact from "../components/Contact";
+import MerchContainer from "../containers/MerchContainer";
 
 function Main() {
   return (
@@ -15,9 +16,10 @@ function Main() {
       <Route path="/courseapply" render={() => <CourseApplyContainer />} />
       <Route path="/syllabus" render={() => <SyllabusContainer />} />
       <Route path="/cv" render={() => <CVContainer />} />
-      <Route path="/contact" render={() => <ContactContainer />} />
-      <Route path="/merch" render={() => <ShopContainer />} />
+
       <Route path="/merch" render={() => <AdminContainer />} />
+      <Route path="/contact" render={() => <Contact />} />
+      <Route path="/merch" render={() => <MerchContainer />} />
     </Switch>
   );
 }

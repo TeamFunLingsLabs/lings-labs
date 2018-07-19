@@ -3,8 +3,9 @@ import React from "react";
 function MerchButton({ item, incrementClick, decrementClick }) {
   return (
     <div>
-      <button onClick={() => incrementClick(item)}>+</button>
-      <button onClick={() => decrementClick(item)}>-</button>
+      <button onClick={() => decrementClick(item)} className="card__button">➖</button>
+      <button onClick={() => incrementClick(item)} className="card__button">➕</button>
+
     </div>
   );
 }

@@ -1,37 +1,35 @@
 function orderReducer(reduxState = {}, action) {
+
   switch (action.type) {
+
     case "ADD_TO_ORDER":
+
       const itemId = action.item.id;
       const oldQuantity = reduxState[itemId];
-      const newQuantity = oldQuantity > 0 ? oldQuantity + 1 : 1;
+      let newQuantity = oldQuantity > 0 ? oldQuantity + 1 : 1;
 
-      return { ...reduxState, [itemId]: newQuantity };
+      const newOrder = Object.assign({}, reduxState, { [itemId]: newQuantity })
+
+      return newOrder;
 
     case "REMOVE_FROM_ORDER":
-      let newOrderDetails;
-      const currentItemIds = action.item.id;
-      const newState = { ...reduxState };
-      let currentQuantity = newState[itemId];
-      // if (currentQuantity > 0) {
-      //   currentQuantity -= 1;
-      // } else if (currentQuantity === 0) {
-      //   newOrderDetails = { ...reduxState };
-      //   delete newOrderDetails[itemId];
-      // }
-      let newOrder;
-      console.log("quantity before subtraction", currentQuantity);
-      currentQuantity -= 1;
-      console.log("quantity", currentQuantity);
-      if (currentQuantity <= 0) {
-        newOrderDetails = { ...reduxState };
-        console.log("newOrderDetails", newOrderDetails);
-        delete newOrderDetails.itemId;
+      const removeItemId = action.item.id;
+      const removeQuantity = reduxState[removeItemId];
+      let amendedOrder;
+
+      if (removeQuantity >= 2) {
+        let newQuantity = removeQuantity - 1;
+        amendedOrder = Object.assign({}, reduxState, { [removeItemId]: newQuantity })
       }
-      newOrder = Object.assign({}, ...reduxState, {
-        [currentItemIds]: currentQuantity
-      });
-      console.log({ ...reduxState, [currentItemIds]: currentQuantity });
-      return newOrder; //{ ...reduxState, [currentItemIds]: currentQuantity };
+      else { // order must be 1, in which case  delete item from state
+
+        const removeOrder = Object.assign({}, reduxState) //clone
+        delete removeOrder[removeItemId]  //delete item from clone
+
+        amendedOrder = Object.assign({}, ...reduxState, removeOrder) //overwrite state with new empty item
+      }
+
+      return amendedOrder;
 
     default:
       return reduxState;
