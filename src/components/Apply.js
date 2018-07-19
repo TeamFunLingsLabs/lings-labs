@@ -2,7 +2,6 @@ import React from "react";
 
 class Apply extends React.Component {
   render() {
-    console.log(this.props.application);
     return (
       <div className="application">
         <form
@@ -12,6 +11,7 @@ class Apply extends React.Component {
             this.props.postApply(this.props.application);
           }}
         >
+          <h3>APPLY BELOW!</h3>
           <input
             onChange={event => {
               this.props.changeFirstName(event.target.value);
@@ -22,6 +22,7 @@ class Apply extends React.Component {
             autoComplete="given-name"
             value={this.props.application.firstName}
           />
+          <p />
           <input
             onChange={event => {
               this.props.changeLastName(event.target.value);
@@ -32,6 +33,7 @@ class Apply extends React.Component {
             autoComplete="family-name"
             value={this.props.application.lastName}
           />
+          <p />
           <textarea
             onChange={event => {
               this.props.changeReason(event.target.value);
@@ -42,6 +44,7 @@ class Apply extends React.Component {
             placeholder="Explain your reason for applying. Remember, I will judge you."
             value={this.props.application.reason}
           />
+          <p />
           <input
             onChange={event => {
               this.props.changeEmail(event.target.value);

@@ -1,5 +1,6 @@
 import React from "react";
 import Merch from "./Merch";
+import Basket from "./Basket";
 
 class MerchDisplay extends React.Component {
   constructor(props) {
@@ -11,10 +12,13 @@ class MerchDisplay extends React.Component {
   }
 
   render() {
-    const { merch, incrementClick, decrementClick } = this.props;
+    const { merch, incrementClick, decrementClick, order } = this.props;
+
     return (
-      <div>
-        <ul>
+      <div className="merch">
+        <div className="merch__content">
+
+
           {Object.keys(merch).map(item => {
             return (
               <Merch
@@ -25,7 +29,16 @@ class MerchDisplay extends React.Component {
               />
             );
           })}
-        </ul>
+
+        </div>
+        <div className="merch__basket">
+          {/* <ul>  */}
+          <Basket
+            currentOrder={order}
+            merch={merch}
+          />
+          {/* </ul> */}
+        </div>
       </div>
     );
   }

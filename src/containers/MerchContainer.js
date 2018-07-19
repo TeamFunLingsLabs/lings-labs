@@ -4,7 +4,8 @@ import { fetchMerchFromStorage, addToOrder, removeFromOrder } from "../actions";
 
 const mapStateToProps = reduxState => {
   return {
-    merch: reduxState.merch
+    merch: reduxState.merch,
+    order: reduxState.currentOrder
   };
 };
 

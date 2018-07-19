@@ -7,6 +7,7 @@ class Footer extends React.Component {
     return (
       <div>
         <Map />
+        <p>2 Baker's Yard, London EC1R 3DD</p>
         <Twitter />
       </div>
     );

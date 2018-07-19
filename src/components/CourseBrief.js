@@ -4,7 +4,7 @@ function CourseBrief() {
   return (
     <div className="applications">
       <h2 className="applications__title">
-        London's only JavaScript bootcamp taught by professional goofballs
+        London's only JavaScript bootcamp taught by professional hipsters!
       </h2>
       <p />
       <p />
