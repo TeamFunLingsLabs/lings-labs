@@ -56,9 +56,13 @@ function TopicList() {
   return (
     <div>
       <ul className="topic-list">
-        <h5>What You'll Learn</h5>
+        <h5 className="topic-list--title">What You'll Learn</h5>
         {topicListItems.map(item => {
-          return <li className="topic-list--list-item">{item}</li>;
+          return (
+            <li className="topic-list--list-item">
+              <p>{item}</p>
+            </li>
+          );
         })}
       </ul>
     </div>
