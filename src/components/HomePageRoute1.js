@@ -6,7 +6,7 @@ export const Button = withRouter(({ history }) => (
     className="homepage__buttons"
     type="button"
     onClick={() => {
-      history.push("/syllabus");
+      history.push("/courseapply");
     }}
   >
     OK
@@ -18,7 +18,7 @@ export const Button2 = withRouter(({ history }) => (
     className="homepage__buttons"
     type="button"
     onClick={() => {
-      history.push("/courseapply");
+      history.push("/syllabus");
     }}
   >
     COOL

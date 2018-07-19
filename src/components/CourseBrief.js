@@ -6,12 +6,12 @@ function CourseBrief() {
       <h2 className="applications__title">
         London's only JavaScript bootcamp taught by professional hipsters!
       </h2>
+      <h4 className="applications__title">
+        Funky Fullstack Web Development with JavaScript
+      </h4>
       <p />
       <p />
       <div className="applications__brief-container">
-        <h4 className="applications__brief-container-title">
-          Funky Fullstack Web Development with JavaScript
-        </h4>
         <ul className="applications__brief-container-list">
           <li>
             <h4>Next Start Date:</h4>

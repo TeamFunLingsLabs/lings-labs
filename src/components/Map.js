@@ -12,12 +12,17 @@ class Map extends React.Component {
       </GoogleMap>
     ));
     return (
-      <div className="Map">
-        <h4>Come and Find Us!</h4>
-        <ConstructorLabsHQ
-          containerElement={<div style={{ height: `500px`, width: "500px" }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
+      <div className="footer">
+        <div className="footer__title-map-container">
+          <h4 className="footer__title">Come and Find Us!</h4>
+          <ConstructorLabsHQ
+            containerElement={
+              <div style={{ height: `220px`, width: "220px" }} />
+            }
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+          <p>2 Baker's Yard, London EC1R 3DD</p>
+        </div>
       </div>
     );
   }
