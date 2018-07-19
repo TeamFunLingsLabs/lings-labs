@@ -2,9 +2,9 @@ import React from "react";
 
 function TeachingStyle() {
   return (
-    <div className="teaching-style">
+    <div className=" teaching-style">
       <h4 className="teaching-style__title">Gangster Teaching Style</h4>
-      <div className="teaching-style__description">
+      <div className="wow fadeIn teaching-style__description">
         <p>
           Rather than focus on long theoretical lectures, we prefer to get stuck
           in and start writing code as soon as possible. As the course
@@ -29,6 +29,7 @@ function TeachingStyle() {
           will get agile stories to implement and the exact implementation
           design will be up to you.
         </p>
+
         <p />
         <p />
         <p>
