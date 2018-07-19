@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function Syllabus() {
   return (
     <div className="content-body syllabus--container">
-      <h2 className="syllabus--title">What we will learn you!</h2>
+      <h2 className="syllabus--title animated 1 shake">
+        What we will learn you!
+      </h2>
       <p className="syllabus--body-text">
         Our course is designed around developing practical skills that will not
         only provide you with a solid understanding of fundamentals and the
@@ -29,7 +31,9 @@ function Syllabus() {
         partners believe would provide a fuller and more rounded skill set.
       </p>
       <Link to="/courseapply">
-        <button className="application-button button">Apply Now</button>
+        <button className="application-button button animated infinite pulse">
+          Apply Now
+        </button>
       </Link>
     </div>
   );

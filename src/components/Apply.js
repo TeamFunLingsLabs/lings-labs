@@ -55,7 +55,7 @@ class Apply extends React.Component {
             placeholder="you@email.com"
             value={this.props.application.email}
           />
-          <button>Submit</button>
+          <button className="application-button">Submit</button>
         </form>
       </div>
     );
