@@ -1,36 +1,41 @@
 import React from "react";
 
 class Admin extends React.Component {
+
   componentDidMount() {
     this.props.displayApplicants();
   }
 
   render() {
-    console.log(this.props.applicants);
+    const { applicants } = this.props
+
     return (
       <div>
-        {this.props.applicants.map(item => {
-          <ul>
-            <li>
-              <h4>First Name:</h4>
-              <p>{item.firstName}</p>
-            </li>
-            <li>
-              <h4>Last Name:</h4>
-              <p>{item.lastName}</p>
-            </li>
-            <li>
-              <h4>Reason:</h4>
-              <p>{item.reason}</p>
-            </li>
-            <li>
-              <h4>Email:</h4>
-              <p>{item.email}</p>
-            </li>
-          </ul>;
+
+        {Object.keys(applicants).map(item => {
+          return (
+            <ul key={applicants[item].id}>
+              <li >
+                <h4>First Name:</h4>
+                <p>{applicants[item].firstName}</p>
+              </li>
+              <li>
+                <h4>Last Name:</h4>
+                <p>{applicants[item].lastName}</p>
+              </li>
+              <li>
+                <h4>Reason:</h4>
+                <p>{applicants[item].reason}</p>
+              </li>
+              <li>
+                <h4>Email:</h4>
+                <p>{applicants[item].email}</p>
+              </li>
+            </ul>
+          )
         })}
-      </div>
-    );
+
+      </div>)
   }
 }
 
