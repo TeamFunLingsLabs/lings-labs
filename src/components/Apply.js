@@ -1,7 +1,10 @@
 import React from "react";
 
 class Apply extends React.Component {
+
+
   render() {
+
     return (
       <div className="application">
         <form
@@ -16,7 +19,7 @@ class Apply extends React.Component {
             onChange={event => {
               this.props.changeFirstName(event.target.value);
             }}
-            type="text"
+            type="text" required
             name="firstName"
             placeholder="First name..."
             autoComplete="given-name"
@@ -27,7 +30,7 @@ class Apply extends React.Component {
             onChange={event => {
               this.props.changeLastName(event.target.value);
             }}
-            type="text"
+            type="text" required
             name="lastName"
             placeholder="Last name..."
             autoComplete="family-name"
@@ -39,7 +42,7 @@ class Apply extends React.Component {
               this.props.changeReason(event.target.value);
             }}
             className="application__reason"
-            type="text"
+            type="text" required
             name="reason"
             placeholder="Explain your reason for applying. Remember, I will judge you."
             value={this.props.application.reason}
@@ -49,7 +52,7 @@ class Apply extends React.Component {
             onChange={event => {
               this.props.changeEmail(event.target.value);
             }}
-            type="email"
+            type="email" required
             name="email"
             autoComplete="email"
             placeholder="you@email.com"

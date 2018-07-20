@@ -8,6 +8,7 @@ import AdminContainer from "../containers/AdminContainer";
 import CVContainer from "../containers/CVContainer";
 import Contact from "../components/Contact";
 import MerchContainer from "../containers/MerchContainer";
+import MoreFun from "../components/MoreFun";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
       <Route path="/admin" render={() => <AdminContainer />} />
       <Route path="/contact" render={() => <Contact />} />
       <Route path="/merch" render={() => <MerchContainer />} />
+      <Route path="/morefun" render={() => <MoreFun />} />
     </Switch>
   );
 }

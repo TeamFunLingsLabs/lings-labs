@@ -4,7 +4,8 @@ function Contact() {
   return (
     <div className="calendar">
       <div className="calendar__contact">
-        <h2 className="calendar__title animated infinite wobble delay-2s">
+        {/* <h2 className="calendar__title animated infinite wobble delay-2s"> */}
+        <h2 className="calendar__title animated wobble delay-2s">
           Contact Us
         </h2>
         <img
