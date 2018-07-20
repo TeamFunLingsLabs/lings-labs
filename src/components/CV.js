@@ -21,7 +21,7 @@ function CV() {
           <div className="cv__profile">
             <h2 className="cv__profiles__title">Dmitri Grabov</h2>
             <img
-              className="cv__profiles__img"
+              className="animated rollIn cv__profiles__img"
               src="/static/images/dmitricvphoto.png"
               alt="A photo of Dmitri"
             />
@@ -37,7 +37,7 @@ function CV() {
             </p>
             <a href="https://twitter.com/dmitrigrabov" target="_blank">
               <img
-                className="cv__icon"
+                className=" cv__icon"
                 src="/static/images/twitter-icon.svg"
                 alt="Twitter icon"
               />
@@ -46,7 +46,7 @@ function CV() {
           <div className="cv__profile">
             <h2 className="cv__profiles__title">Oliver Turner</h2>
             <img
-              className="cv__profiles__img"
+              className="animated rollIn delay-5s cv__profiles__img"
               src="/static/images/olivercvphoto.jpeg"
               alt="A photo of Oliver"
             />

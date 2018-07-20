@@ -26,3 +26,39 @@ a {
 
   font-size: 1rem;
 }
+
+.mini-game,
+.mini-game__controls {
+  display: none;
+}
+
+.mini-game__mobile {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+.mini-game__background {
+  background: url("../images/tenor.gif");
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .mini-game,
+  .mini-game__controls {
+    display: block;
+    color: aliceblue;
+  }
+
+  .mini-game__mobile {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .mini-game__background {
+    background: black;
+  }
+}

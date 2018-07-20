@@ -71,6 +71,8 @@
   width: 40%;
   height: 40%;
 
+  padding: 10px;
+
   animation-name: logo-spin;
   animation-duration: 4000ms;
   animation-iteration-count: infinite;
@@ -182,6 +184,11 @@
 
 .topic-list--list-item {
   font-family: Montserrat, sans-serif;
+}
+
+.homepage__quotes {
+  background: black;
+  color: #f1f1f1;
 }
 
 @media (min-width: 768px) {
@@ -366,5 +373,10 @@
 
   .topic-list--list-item {
     font-family: Montserrat, sans-serif;
+  }
+
+  .homepage__quotes {
+    background: black;
+    color: #f1f1f1;
   }
 }

@@ -2,6 +2,7 @@
   width: 100%;
   background-image: url("/static/images/chicksbg.jpg");
   color: #38625c;
+  background: cover;
 }
 
 .calendar__contact {
@@ -72,7 +73,7 @@
   .calendar {
     width: 100%;
     background-image: url("/static/images/chicksbg.jpg");
-    background-size: cover;
+    background-size: repeat;
     color: #38625c;
   }
 
@@ -99,7 +100,8 @@
 
   .calendar__content {
     text-align: center;
-    padding: 50px;
+
+    padding: 140px;
   }
 
   .calendar__button {
