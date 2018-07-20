@@ -81,7 +81,7 @@ function CV() {
         <p className="reviews__text">Harry - Cohort 2 - Developer Avocado</p>
         <p className="reviews__text">-------------</p>
         <p className="reviews__text">"Camel camel potato camel"</p>
-        <p className="reviews__text">Ahmed - Cohort 2 - Pidgeon</p>
+        <p className="reviews__text">Ahmed - Cohort 2 - Pigeon</p>
         <p className="reviews__text">-------------</p>
         <p className="reviews__text">
           "I'm flying mate. React, Redux, CSS - BOOM. Nailed it. Cheers Dmitri.

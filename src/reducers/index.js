@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import setApplication from "./setApplication";
-import applicants from "./applicants"
+import applicants from "./applicants";
 
 import merchReducer from "./merchReducer";
 import orderReducer from "./orderReducer";

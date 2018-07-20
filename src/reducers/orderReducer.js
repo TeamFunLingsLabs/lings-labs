@@ -1,14 +1,11 @@
 function orderReducer(reduxState = {}, action) {
-
   switch (action.type) {
-
     case "ADD_TO_ORDER":
-
       const itemId = action.item.id;
       const oldQuantity = reduxState[itemId];
       let newQuantity = oldQuantity > 0 ? oldQuantity + 1 : 1;
 
-      const newOrder = Object.assign({}, reduxState, { [itemId]: newQuantity })
+      const newOrder = Object.assign({}, reduxState, { [itemId]: newQuantity });
 
       return newOrder;
 
@@ -19,17 +16,23 @@ function orderReducer(reduxState = {}, action) {
 
       if (removeQuantity >= 2) {
         let newQuantity = removeQuantity - 1;
-        amendedOrder = Object.assign({}, reduxState, { [removeItemId]: newQuantity })
-      }
-      else { // order must be 1, in which case  delete item from state
+        amendedOrder = Object.assign({}, reduxState, {
+          [removeItemId]: newQuantity
+        });
+      } else {
+        // order must be 1, in which case  delete item from state
 
-        const removeOrder = Object.assign({}, reduxState) //clone
-        delete removeOrder[removeItemId]  //delete item from clone
+        const removeOrder = Object.assign({}, reduxState); //clone
+        delete removeOrder[removeItemId]; //delete item from clone
 
-        amendedOrder = Object.assign({}, ...reduxState, removeOrder) //overwrite state with new empty item
+        amendedOrder = Object.assign({}, ...reduxState, removeOrder); //overwrite state with new empty item
       }
 
       return amendedOrder;
+
+    case "CLEAR_BASKET":
+      const clearOrder = {};
+      return clearOrder;
 
     default:
       return reduxState;

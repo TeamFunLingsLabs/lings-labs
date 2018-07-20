@@ -1,13 +1,12 @@
-
 export function postApplication(application) {
-  return function (dispatch, getState) {
+  return function(dispatch, getState) {
     fetch("/api/applications", {
       method: "post",
       body: JSON.stringify(application),
       headers: {
         "Content-Type": "application/json"
       }
-    }).then(function (response) {
+    }).then(function(response) {
       return response.json();
     });
   };
@@ -41,7 +40,6 @@ export function setEmail(email) {
   };
 }
 
-
 export function receiveMerch(merch) {
   return {
     type: "RECEIVE_MERCH",
@@ -50,14 +48,13 @@ export function receiveMerch(merch) {
 }
 
 export function fetchMerchFromStorage() {
-  return function (dispatch) {
+  return function(dispatch) {
     fetch("/api/merch")
       .then(response => response.json())
       .then(merch => {
-
         dispatch(receiveMerch(merch));
       })
-      .catch(function (error) {
+      .catch(function(error) {
         console.log("something went wrong");
       });
   };
@@ -78,15 +75,13 @@ export function removeFromOrder(item) {
 }
 
 export function fetchApplicants() {
-  return function (dispatch) {
+  return function(dispatch) {
     fetch("/api/applications")
       .then(response => response.json())
       .then(applicants => {
-
         dispatch(receiveApplicants(applicants));
-
       })
-      .catch(function (error) {
+      .catch(function(error) {
         console.log("something went wrong");
       });
   };
@@ -96,5 +91,11 @@ export function receiveApplicants(applicants) {
   return {
     type: "FETCH_APPLICATIONS",
     applicants
+  };
+}
+
+export function clearBasket() {
+  return {
+    type: "CLEAR_BASKET"
   };
 }

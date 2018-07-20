@@ -1,6 +1,11 @@
 import { connect } from "react-redux";
 import MerchDisplay from "../components/MerchDisplay";
-import { fetchMerchFromStorage, addToOrder, removeFromOrder } from "../actions";
+import {
+  fetchMerchFromStorage,
+  addToOrder,
+  removeFromOrder,
+  clearBasket
+} from "../actions";
 
 const mapStateToProps = reduxState => {
   return {
@@ -13,7 +18,11 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchMerch: () => dispatch(fetchMerchFromStorage()),
     incrementClick: item => dispatch(addToOrder(item)),
-    decrementClick: item => dispatch(removeFromOrder(item))
+    decrementClick: item => dispatch(removeFromOrder(item)),
+    handleClick: event => {
+      event.preventDefault();
+      dispatch(clearBasket());
+    }
   };
 };
 
