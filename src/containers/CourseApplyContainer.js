@@ -4,8 +4,10 @@ import {
   setFirstName,
   setLastName,
   setReason,
-  setEmail
+  setEmail,
+  sendSMS
 } from "../actions";
+
 import CourseWrapper from "../components/CourseWrapper";
 
 export const mapStateToProps = reduxState => {
@@ -36,6 +38,7 @@ export const mapDispatchToProps = dispatch => {
       dispatch(setLastName(""));
       dispatch(setReason(""));
       dispatch(setEmail(""));
+      dispatch(sendSMS())
     }
   };
 };
