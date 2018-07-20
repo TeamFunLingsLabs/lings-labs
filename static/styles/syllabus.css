@@ -1,6 +1,8 @@
 .syllabus--container {
   width: 100%;
   padding: 0 3rem;
+
+  z-index: 3;
 }
 
 .syllabus--title {
@@ -19,4 +21,29 @@
   border-radius: 20px;
   background-color: #38625c;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .syllabus--container {
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+  .syllabus--title {
+    size: 2rem;
+    font-family: "Press Start 2P", cursive;
+    color: #38625c;
+  }
+
+  .syllabus--body-text {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+  }
+
+  .application-button {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #38625c;
+    color: #fff;
+  }
 }

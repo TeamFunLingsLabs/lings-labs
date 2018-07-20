@@ -1,6 +1,5 @@
 import React from "react";
 import MerchButton from "./MerchButton";
-import Popup from "./Popup";
 
 class Merch extends React.Component {
   constructor(props) {

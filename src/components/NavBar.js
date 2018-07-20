@@ -15,16 +15,16 @@ function NavBar() {
         </li>
         <p />
         <p />
-        <li>
+        <li className="navbar__links-text">
           <Link to="/">Home</Link>
         </li>
         <p />
-        <li>
-          <Link to="/courseapply">Course/Apply</Link>
+        <li className="navbar__links-text">
+          <Link to="/courseapply">Apply</Link>
         </li>
         <p />
 
-        <li>
+        <li className="navbar__links-text">
           <Link to="/syllabus">Syllabus</Link>
         </li>
         <p />

@@ -12,33 +12,39 @@
 
 .applications__brief-container {
   float: left;
-  width: 300px;
+  width: 100px;
 
   color: gray;
   font-family: Montserrat, sans-serif;
 }
 
+.applications__title {
+  float: left;
+}
+
 .why-us {
-  text-align: right;
+  text-align: left;
 
   background: url("../images/background-application2.png") no-repeat;
   background-size: cover;
 
   color: gray;
 
+  width: 100%;
+
   padding: 20px;
 }
 
 .why-us__title {
   text-align: left;
-  size: 4rem;
+  size: 2rem;
   font-weight: bold;
   font-family: Press Start 2p, cursive;
 }
 
 .why-us__description {
-  width: 500px;
-  text-align: right;
+  width: 250px;
+  text-align: left;
 
   font-family: Montserrat, sans-serif;
 }
@@ -51,11 +57,13 @@
 
   color: gray;
 
+  width: 100%;
+
   padding: 20px;
 }
 
 .teaching-style__description {
-  width: 450px;
+  width: 200px;
   font-family: Montserrat, sans-serif;
 }
 
@@ -63,7 +71,7 @@
   display: flex;
   flex-direction: column;
 
-  align-items: center;
+  align-items: flex-start;
 
   background: url("../images/background-application2.png") no-repeat;
   background-size: cover;
@@ -75,13 +83,335 @@
   color: gray;
 }
 
+.thug__life {
+  display: none;
+}
+
+.application__thanks-popup {
+  display: block;
+  position: relative;
+
+  width: auto;
+  height: 300px;
+
+  bottom: 10px;
+}
+
+.application__thanks {
+  visibility: hidden;
+
+  width: 150px;
+  height: auto;
+}
+
+.application__glasses {
+  display: block;
+  position: relative;
+
+  width: 300px;
+  height: 300px;
+
+  top: -50px;
+
+  z-index: 1;
+
+  animation: glasses-move 5s forwards;
+}
+
+@keyframes glasses-move {
+  25% {
+    transform: translateY(100px);
+    transform: translateX(-100px);
+  }
+
+  50% {
+    transform: translateY(300px);
+    transform: translateX(-150px);
+  }
+
+  75% {
+    transform: translateY(300px);
+
+    transform: translateX(-200px);
+  }
+
+  100% {
+    transform: translateY(300px);
+
+    transform: translateX(-250px);
+  }
+}
+
+.application__glasses-hidden {
+  visibility: hidden;
+
+  width: 200px;
+  height: auto;
+}
+
+.application__smoke {
+  display: block;
+  position: relative;
+
+  width: 80px;
+  height: 80px;
+
+  z-index: 1;
+
+  top: 150px;
+
+  animation: smoke-move 5s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}
+
+@keyframes smoke-move {
+  25% {
+    transform: translateY(-100px);
+    transform: translateX(50px);
+  }
+
+  50% {
+    transform: translateY(-100px);
+
+    transform: translateX(60px);
+  }
+
+  75% {
+    transform: translateY(-200px);
+
+    transform: translateX(70px);
+  }
+
+  100% {
+    transform: translateY(-300px);
+
+    transform: translateX(90px);
+  }
+}
+
+.audio-file {
+  visibility: hidden;
+}
+
+.application__smoke-hidden {
+  visibility: hidden;
+
+  width: 80px;
+  height: 80px;
+}
+
 input {
-  width: 500px;
+  width: 250px;
 
   padding: 10px;
 }
 
 textarea {
-  width: 500px;
+  width: 250px;
   height: 350px;
+}
+
+@media (min-width: 768px) {
+  .applications {
+    display: flex;
+    flex-direction: column;
+
+    color: gray;
+
+    background: url("../images/background-application.png") no-repeat;
+    background-size: cover;
+
+    padding: 20px;
+  }
+
+  .applications__brief-container {
+    float: left;
+    width: 300px;
+
+    color: gray;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .why-us {
+    text-align: left;
+
+    background: url("../images/background-application2.png") no-repeat;
+    background-size: cover;
+
+    color: gray;
+
+    padding: 20px;
+  }
+
+  .why-us__title {
+    text-align: left;
+    size: 4rem;
+    font-weight: bold;
+    font-family: Press Start 2p, cursive;
+  }
+
+  .why-us__description {
+    width: 500px;
+    text-align: left;
+
+    font-family: Montserrat, sans-serif;
+  }
+
+  .teaching-style {
+    text-align: left;
+
+    background: url("../images/background-application.png") no-repeat;
+    background-size: cover;
+
+    color: gray;
+
+    padding: 20px;
+  }
+
+  .teaching-style__description {
+    width: 450px;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .application__form {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background: url("../images/background-application2.png") no-repeat;
+    background-size: cover;
+
+    width: 100%;
+
+    padding: 10px;
+
+    color: gray;
+  }
+
+  .thug__life {
+    display: flex;
+  }
+
+  .application__thanks-popup {
+    display: block;
+    position: relative;
+
+    width: auto;
+    height: 300px;
+
+    bottom: 10px;
+  }
+
+  .application__thanks {
+    visibility: hidden;
+
+    width: 150px;
+    height: auto;
+  }
+
+  .application__glasses {
+    display: block;
+    position: relative;
+
+    width: 300px;
+    height: 300px;
+
+    top: -50px;
+
+    z-index: 1;
+
+    animation: glasses-move 5s forwards;
+  }
+
+  @keyframes glasses-move {
+    25% {
+      transform: translateY(100px);
+      transform: translateX(-100px);
+    }
+
+    50% {
+      transform: translateY(300px);
+      transform: translateX(-150px);
+    }
+
+    75% {
+      transform: translateY(300px);
+
+      transform: translateX(-200px);
+    }
+
+    100% {
+      transform: translateY(300px);
+
+      transform: translateX(-250px);
+    }
+  }
+
+  .application__glasses-hidden {
+    visibility: hidden;
+
+    width: 200px;
+    height: auto;
+  }
+
+  .application__smoke {
+    display: block;
+    position: relative;
+
+    width: 80px;
+    height: 80px;
+
+    z-index: 1;
+
+    top: 150px;
+
+    animation: smoke-move 5s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+  }
+
+  @keyframes smoke-move {
+    25% {
+      transform: translateY(-100px);
+      transform: translateX(50px);
+    }
+
+    50% {
+      transform: translateY(-100px);
+
+      transform: translateX(60px);
+    }
+
+    75% {
+      transform: translateY(-200px);
+
+      transform: translateX(70px);
+    }
+
+    100% {
+      transform: translateY(-300px);
+
+      transform: translateX(90px);
+    }
+  }
+
+  .audio-file {
+    visibility: hidden;
+  }
+
+  .application__smoke-hidden {
+    visibility: hidden;
+
+    width: 80px;
+    height: 80px;
+  }
+
+  input {
+    width: 500px;
+
+    padding: 10px;
+  }
+
+  textarea {
+    width: 500px;
+    height: 350px;
+  }
 }
