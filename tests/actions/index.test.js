@@ -99,7 +99,7 @@ describe("actions", () => {
   });
 });
 
-describe.only("actions", () => {
+describe("actions", () => {
   it("removeFromOrder decrements basket number by 1 or removes an item if its quantity is 0", () => {
     const action = removeFromOrder({
       3: 4,
