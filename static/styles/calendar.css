@@ -1,7 +1,6 @@
 .calendar {
   width: 100%;
   background-image: url("/static/images/chicksbg.jpg");
-  background-size: cover;
   color: #38625c;
 }
 

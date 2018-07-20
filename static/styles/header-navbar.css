@@ -111,7 +111,10 @@
 }
 
 .homepage__quotes {
+  margin: auto;
   text-align: center;
+  width: 500px;
+  padding: 50px;
 }
 
 .quote {
