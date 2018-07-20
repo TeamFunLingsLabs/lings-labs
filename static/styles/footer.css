@@ -1,6 +1,8 @@
 .footer {
   display: flex;
 
+  font-family: Montserrat, sans-serif;
+
   justify-content: space-around;
 
   border-style: solid;
@@ -15,6 +17,47 @@
 }
 
 .footer__map {
-  width: 10px;
+  width: 5px;
   height: auto;
+}
+
+.twitter-timeline {
+  display: none;
+}
+
+.footer__text-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+
+    font-family: Montserrat, sans-serif;
+
+    justify-content: space-around;
+
+    border-style: solid;
+    border-top-color: #38625c;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+    background-color: #ffee00;
+
+    color: #38625c;
+  }
+
+  .footer__map {
+    width: 10px;
+    height: auto;
+  }
+
+  .twitter-timeline {
+    display: block;
+  }
+
+  .footer__text-container {
+    display: block;
+  }
 }

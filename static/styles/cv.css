@@ -22,7 +22,7 @@
 
 .cv__profiles {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   text-align: center;
 }
@@ -51,6 +51,7 @@
 }
 
 .reviews__section {
+  display: none;
   margin: auto;
   width: 800px;
   text-align: center;
@@ -58,4 +59,69 @@
 
 .reviews__text {
   font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .cvcontainer {
+    width: 100%;
+    background-image: url("/static/images/cvwallpaper.jpeg");
+    background-size: cover;
+    color: #fdebdb;
+  }
+
+  .cv__section__intro {
+    text-align: center;
+  }
+
+  .cv__section__title {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .cv__icon {
+    margin: auto;
+    width: 30px;
+    margin: 15px;
+  }
+
+  .cv__profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .cv__profile {
+    margin: 20px;
+    padding: 40px;
+  }
+
+  .cv__profiles__img {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    border-color: #ab3344;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: 10px 10px 8px #080508;
+  }
+
+  .cv__profiles__text {
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .reviews__section {
+    display: block;
+    margin: auto;
+    width: 800px;
+    text-align: center;
+  }
+
+  .reviews__text {
+    font-family: "Montserrat", sans-serif;
+  }
 }

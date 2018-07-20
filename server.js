@@ -6,15 +6,14 @@ app.use(bodyParser.json());
 app.use("/static", express.static("static"));
 app.set("view engine", "hbs");
 
-
 //New student application and id assignment
 function applicationTemplate() {
   const applications = {};
   let applyId = 0;
 
   function newApplications(application) {
-    if (application === 'GET') {
-      return applications
+    if (application === "GET") {
+      return applications;
     }
     applyId++;
     applications[applyId] = Object.assign({}, application, { id: applyId });
@@ -32,14 +31,14 @@ const newApplication = applicationTemplate();
 //   res.json(application);
 // });
 
-app.post("/api/applications", function (req, res) {
+app.post("/api/applications", function(req, res) {
   application = newApplication(req.body);
   console.log("application", application);
   res.json(application);
 });
 
-app.get("/api/applications", function (req, res) {
-  const applicants = newApplication('GET');
+app.get("/api/applications", function(req, res) {
+  const applicants = newApplication("GET");
   res.json(applicants);
 });
 
@@ -51,8 +50,6 @@ app.get("/api/applications", function (req, res) {
 // function getApplicants() {
 //   return applications;
 // }
-
-
 
 const storage = {
   merch: {
@@ -128,12 +125,12 @@ function getOrders(storage) {
   return storage.orders;
 }
 
-app.get("/api/merch", function (req, res) {
+app.get("/api/merch", function(req, res) {
   const merch = getMerch(storage);
   res.json(merch);
 });
 
-app.post("/api/order", function (req, res) {
+app.post("/api/order", function(req, res) {
   const orderId = `order-${storage.id++}`;
   const tempOrder = req.body;
   tempOrder.id = orderId;
@@ -142,22 +139,22 @@ app.post("/api/order", function (req, res) {
   res.status(201).json(tempOrder);
 });
 
-app.get("/api/order", function (req, res) {
+app.get("/api/order", function(req, res) {
   const orders = getOrders(storage);
   res.json(orders);
 });
 
-app.delete("/api/order/:key", function (req, res) {
+app.delete("/api/order/:key", function(req, res) {
   orderhistory = storage.orders;
   delete orderhistory[req.params.key];
   res.status(201).json(orderhistory);
 });
 
-app.get("*", function (req, res) {
+app.get("*", function(req, res) {
   res.render("index");
 });
 
-const port = process.env.PORT || 8081;
-app.listen(port, function () {
+const port = process.env.PORT || 8080;
+app.listen(port, function() {
   console.log(`Listening on port number ${port}`);
 });

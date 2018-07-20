@@ -23,11 +23,19 @@
   height: 10%;
 }
 
+.dmitri__animated {
+  display: block;
+  float: left;
+
+  width: 10%;
+  height: 10%;
+}
+
 .beards {
   display: flex;
   flex-direction: column;
 
-  width: 13em;
+  width: 10%;
   height: auto;
 }
 
@@ -35,37 +43,47 @@
   margin: 0;
   position: absolute;
 
-  width: 8em;
-  height: 7em;
+  width: 10%;
+  height: auto;
 }
 
 .beards__ginger {
   margin: 0;
   position: relative;
 
-  width: 8em;
-  height: 7em;
+  width: 10%;
+  height: auto;
 }
 
 .beards__white {
   margin: 0;
   position: absolute;
 
-  width: 8em;
-  height: 7em;
+  width: 10%;
+  height: auto;
 }
 
 .russian-hat {
-  margin-top: -60px;
-  margin-bottom: 5px;
-
-  width: 13em;
-  height: 15em;
+  display: none;
 }
 
 .logo {
-  width: 10em;
-  height: 10em;
+  width: 40%;
+  height: 40%;
+
+  animation-name: logo-spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .title-container {
@@ -89,7 +107,7 @@
   display: flex;
   flex-direction: column;
 
-  width: 250px;
+  width: 30%;
 
   background-color: #ffee00;
 
@@ -101,7 +119,14 @@
   display: flex;
   flex-direction: column;
 
+  font-size: 10px;
   justify-content: space-around;
+
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar__links-text {
+  font-size: 7px;
 }
 
 .homepage__video {
@@ -154,4 +179,189 @@
 
 .topic-list--list-item {
   font-family: Montserrat, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+
+    margin: 0;
+    padding: 45px;
+
+    width: 100%;
+
+    justify-content: space-around;
+
+    background-color: #ffee00;
+    color: #38625c;
+
+    border-bottom-style: solid;
+    border-bottom-color: #38625c;
+  }
+
+  .dmitri {
+    display: block;
+    float: left;
+
+    width: 10%;
+    height: 10%;
+  }
+
+  .dmitri__animated {
+    display: block;
+    float: left;
+
+    width: 10%;
+    height: 10%;
+  }
+
+  .beards {
+    display: flex;
+    flex-direction: column;
+
+    width: 13em;
+    height: auto;
+  }
+
+  .beards__brown {
+    margin: 0;
+    position: absolute;
+
+    width: 8em;
+    height: 7em;
+  }
+
+  .beards__ginger {
+    margin: 0;
+    position: relative;
+
+    width: 8em;
+    height: 7em;
+  }
+
+  .beards__white {
+    margin: 0;
+    position: absolute;
+
+    width: 8em;
+    height: 7em;
+  }
+
+  .russian-hat {
+    display: block;
+    margin-top: -60px;
+    margin-bottom: 5px;
+
+    width: 13em;
+    height: 15em;
+  }
+
+  .logo {
+    width: 10em;
+    height: 10em;
+
+    animation-name: logo-spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    color: red;
+
+    animation: color-blink 0.3s steps(2, start) infinite;
+  }
+
+  @keyframes color-blink {
+    to {
+      color: #38625c;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+
+    background-color: #ffee00;
+
+    border-right-color: #38625c;
+    border-right-style: solid;
+  }
+
+  .navbar__links {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+
+    font-family: Press Start 2p, cursive;
+  }
+
+  .homepage__video {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .homepage__quotes {
+    text-align: center;
+  }
+
+  .quote {
+    padding: 8px;
+  }
+
+  .homepage__routes {
+    position: fixed;
+
+    top: 38%;
+    width: auto;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+
+    text-align: center;
+
+    font-family: "Press Start 2P", cursive;
+  }
+
+  .homepage__buttons {
+    border-radius: 50%;
+    border-color: #ffee00;
+    border-width: 5px;
+    border-style: ridge;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #38625c;
+
+    height: 5em;
+    width: 5em;
+  }
+
+  .topic-list--title {
+    font-family: "Press Start 2P", cursive;
+  }
+
+  .topic-list--list-item {
+    font-family: Montserrat, sans-serif;
+  }
 }

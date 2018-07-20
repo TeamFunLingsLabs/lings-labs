@@ -9,9 +9,7 @@ function Twitter() {
       data-theme="dark"
       data-link-color="#E81C4F"
       href="https://twitter.com/dmitrigrabov?ref_src=twsrc%5Etfw"
-    >
-      Tweets by dmitrigrabov
-    </a>
+    />
   );
 }
 
