@@ -12,13 +12,17 @@ class MerchDisplay extends React.Component {
   }
 
   render() {
-    const { merch, incrementClick, decrementClick, order } = this.props;
+    const {
+      merch,
+      incrementClick,
+      decrementClick,
+      order,
+      handleClick
+    } = this.props;
 
     return (
       <div className="merch">
         <div className="merch__content">
-
-
           {Object.keys(merch).map(item => {
             return (
               <Merch
@@ -29,13 +33,13 @@ class MerchDisplay extends React.Component {
               />
             );
           })}
-
         </div>
         <div className="merch__basket">
           {/* <ul>  */}
           <Basket
             currentOrder={order}
             merch={merch}
+            handleClick={handleClick}
           />
           {/* </ul> */}
         </div>

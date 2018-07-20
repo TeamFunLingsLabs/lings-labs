@@ -16,6 +16,7 @@ class Apply extends React.Component {
       toggleThanks: !this.state.toggleThanks
     });
   }
+
   render() {
     return (
       <div className="application">
@@ -32,6 +33,7 @@ class Apply extends React.Component {
               this.props.changeFirstName(event.target.value);
             }}
             type="text"
+            required
             name="firstName"
             placeholder="First name..."
             autoComplete="given-name"
@@ -43,6 +45,7 @@ class Apply extends React.Component {
               this.props.changeLastName(event.target.value);
             }}
             type="text"
+            required
             name="lastName"
             placeholder="Last name..."
             autoComplete="family-name"
@@ -55,6 +58,7 @@ class Apply extends React.Component {
             }}
             className="application__reason"
             type="text"
+            required
             name="reason"
             placeholder="Explain your reason for applying. Remember, I will judge you."
             value={this.props.application.reason}
@@ -65,6 +69,7 @@ class Apply extends React.Component {
               this.props.changeEmail(event.target.value);
             }}
             type="email"
+            required
             name="email"
             autoComplete="email"
             placeholder="you@email.com"

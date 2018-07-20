@@ -44,6 +44,11 @@ function NavBar() {
         </li>
         <p />
 
+        <li>
+          <Link to="/morefun">More Fun</Link>
+        </li>
+        <p />
+
         <p />
         <li>
           <Link to="/admin">Admin</Link>

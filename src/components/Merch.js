@@ -25,7 +25,7 @@ class Merch extends React.Component {
       // <article className='content__card' id='morph' onClick={this.togglePopup}>
       <article className="content__card" id="morph">
         <header className="card__h1">{item.name}</header>
-        <img src={item.img} alt={item.desc} className="card__image" />
+        <img src={item.img} alt={item.name} className="card__image" />
         <MerchButton
           item={item}
           incrementClick={incrementClick}
