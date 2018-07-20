@@ -13,6 +13,14 @@ export function postApplication(application) {
   };
 }
 
+export function sendSMS() {
+  return function (dispatch, getState) {
+    fetch('/sendsms', {
+      method: 'POST'
+    })
+  }
+}
+
 export function setFirstName(firstName) {
   return {
     type: "SET_FIRST_NAME",

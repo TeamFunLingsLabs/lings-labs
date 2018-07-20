@@ -2,6 +2,11 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 
+// keys for twilio
+accountSid = "ACb43bace59bfbef821723be7b56b1b7a6"
+authToken = "2e1f9e637912d69716ea8c490efb4033"
+const client = require('twilio')(accountSid, authToken);
+
 app.use(bodyParser.json());
 app.use("/static", express.static("static"));
 app.set("view engine", "hbs");
@@ -18,23 +23,17 @@ function applicationTemplate() {
     }
     applyId++;
     applications[applyId] = Object.assign({}, application, { id: applyId });
+
+
     return applications[applyId];
   }
-
   return newApplications;
 }
 
 const newApplication = applicationTemplate();
 
-// app.post("/api/applications", function (req, res) {
-//   const application = newApplication(req.body);
-//   console.log("application", application);
-//   res.json(application);
-// });
-
 app.post("/api/applications", function (req, res) {
   application = newApplication(req.body);
-  console.log("application", application);
   res.json(application);
 });
 
@@ -43,16 +42,16 @@ app.get("/api/applications", function (req, res) {
   res.json(applicants);
 });
 
-// app.get("/api/applications", function (req, res) {
-//   const applicants = getApplicants();
-//   console.log("Applicants ", applicants)
-//   res.json(applicants);
-// });
-// function getApplicants() {
-//   return applications;
-// }
 
+app.post('/sendsms', (req, res) => {
 
+  client.messages.create({
+    to: "+447762071057",
+    from: "+441298918018",
+    body: "alert(New Padawan application ready for assessment, Master Dmitri!)"
+  })
+    .then((message) => console.log(message.sid))
+})
 
 const storage = {
   merch: {
