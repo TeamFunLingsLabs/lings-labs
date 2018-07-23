@@ -43,7 +43,7 @@ app.get("/api/applications", function(req, res) {
 app.post("/sendsms", (req, res) => {
   client.messages
     .create({
-      to: "+447891199440",
+      to: "",
       from: "+441298918018",
       body:
         "alert(New Padawan application ready for assessment, Master Dmitri!)"
